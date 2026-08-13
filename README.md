@@ -1,5 +1,7 @@
 # Dev Ops Learnings
 
+![Rust CI](https://github.com/orjules/dev-ops-learnings/actions/workflows/rust.yml/badge.svg)
+
 I wanted to learn some basic dev ops, so I made this repo as an example.
 
 ## Goals
@@ -8,8 +10,8 @@ I wanted to learn some basic dev ops, so I made this repo as an example.
 - [x] Create releases with tags
 - [x] Add license
 - [x] Setup CI pipeline for testing
+- [x] Use the badges everybody has in their READMEs
 - [ ] Setup CD to automatically create releases
-- [ ] Use the badges everybody has in their READMEs
 
 ## Simple project
 
@@ -84,3 +86,7 @@ jobs: # Each job checks its own run on a VM
 
 When created the actions run and can be seen in the `Actions` tab.
 The commit also gets a small check mark on the main page.
+
+## Badges
+
+GitHub provides the passing badge already at `https://github.com/<user>/<repo>/actions/workflows/<name>.yml/badge.svg`.
