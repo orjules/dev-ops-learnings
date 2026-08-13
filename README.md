@@ -6,7 +6,7 @@ I wanted to learn some basic dev ops, so I made this repo as an example.
 
 - [x] Create a simple testable project
 - [x] Create releases with tags
-- [ ] Add license
+- [x] Add license
 - [ ] Setup CI pipeline for testing
 - [ ] Setup CD to automatically create releases
 - [ ] Use the badges everybody has in their READMEs
@@ -46,3 +46,7 @@ Alternatively, GitHub allows to create a new tag on the dialogue where a new rel
 
 To create the release, simply use the GitHub feature for it.
 It's pretty self explanatory.
+
+## License
+
+The website [choosealicense](https://choosealicense.com/) is pretty helpful.
