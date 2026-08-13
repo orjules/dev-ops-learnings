@@ -11,7 +11,10 @@ I wanted to learn some basic dev ops, so I made this repo as an example.
 - [x] Add license
 - [x] Setup CI pipeline for testing
 - [x] Use the badges everybody has in their READMEs
-- [ ] Setup CD to automatically create releases
+- [ ] Append linting to CI pipeline (maybe with semantic branching)
+- [ ] Setup CD to automatically create releases on GitHub
+- [ ] Create a crates.io release (with docs and badges from there)
+- [ ] Add CD to release to crated.io
 
 ## Simple project
 
@@ -20,8 +23,7 @@ The project I chose was to create a CLI to convert units.
 To run it use:
 
 ```bash
-$ cargo run -- ft-m 3.281
-1
+cargo run -- ft-m 3.281
 ```
 
 But more relevant would be to test it with:
