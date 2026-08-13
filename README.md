@@ -7,7 +7,7 @@ I wanted to learn some basic dev ops, so I made this repo as an example.
 - [x] Create a simple testable project
 - [x] Create releases with tags
 - [x] Add license
-- [ ] Setup CI pipeline for testing
+- [x] Setup CI pipeline for testing
 - [ ] Setup CD to automatically create releases
 - [ ] Use the badges everybody has in their READMEs
 
@@ -50,3 +50,37 @@ It's pretty self explanatory.
 ## License
 
 The website [choosealicense](https://choosealicense.com/) is pretty helpful.
+
+## CI
+
+The workflows (on GitHub at least) live in `.github/workflows`.
+The template for rust looks like this, but I added the comments:
+
+```yaml
+name: Rust # Simply the name
+
+# When this will be run
+on:
+  push:
+    branches: [ "main" ] # Any push directly to main
+  pull_request:
+    branches: [ "main" ] # A change in the PR which is pointed at main
+
+env:
+  CARGO_TERM_COLOR: always # Cosmetic to have color in the cargo output
+
+jobs: # Each job checks its own run on a VM
+  build-and-test: # Template calls it only build
+
+    runs-on: ubuntu-latest # Which VM it uses
+
+    steps: # Then sequential steps
+    - uses: actions/checkout@v4 # An official action by GitHub: https://github.com/actions/checkout
+    - name: Build # Could be skipped but making this step explicit seems good
+      run: cargo build --verbose
+    - name: Run tests # The actually interesting part
+      run: cargo test --verbose
+```
+
+When created the actions run and can be seen in the `Actions` tab.
+The commit also gets a small check mark on the main page.
