@@ -6,7 +6,9 @@ I wanted to learn some basic dev ops, so I made this repo as an example.
 
 - [x] Create a simple testable project
 - [x] Create releases with tags
+- [ ] Add license
 - [ ] Setup CI pipeline for testing
+- [ ] Setup CD to automatically create releases
 - [ ] Use the badges everybody has in their READMEs
 
 ## Simple project
