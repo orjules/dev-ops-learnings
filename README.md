@@ -90,3 +90,4 @@ The commit also gets a small check mark on the main page.
 ## Badges
 
 GitHub provides the passing badge already at `https://github.com/<user>/<repo>/actions/workflows/<name>.yml/badge.svg`.
+The badge shows: (GitHub symbol | CI name (in the file) | passing/failed)
